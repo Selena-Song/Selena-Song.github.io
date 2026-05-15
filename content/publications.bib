@@ -1,0 +1,44 @@
+@misc{song2025learningplugandplaymemoryguiding,
+  selected={true},
+  title={Learning Plug-and-play Memory for Guiding Video Diffusion Models}, 
+  author={Selena Song* and Ziming Xu* and Zijun Zhang and Kun Zhou and Jiaxian Guo and Lianhui Qin and Biwei Huang},
+  year={2025},
+  eprint={2511.19229},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2511.19229}, 
+  website={https://thrcle421.github.io/DiT-Mem-Web/},
+  abstract = {Diffusion Transformer(DiT) based video generation models have recently achieved impressive visual quality and temporal coherence, but they still frequently violate basic physical laws and commonsense dynamics, revealing a lack of explicit world knowledge. In this work, we explore how to equip them with a plug-and-play memory that injects useful world knowledge. Motivated by in-context memory in Transformer-based LLMs, we conduct empirical studies to show that DiT can be steered via interventions on its hidden states, and simple low-pass and high-pass filters in the embedding space naturally disentangle low-level appearance and high-level physical/semantic cues, enabling targeted guidance. Building on these observations, we propose a learnable memory encoder DiT-Mem, composed of stacked 3D CNNs, low-/high-pass filters, and self-attention layers. The encoder maps reference videos into a compact set of memory tokens, which are concatenated as the memory within the DiT self-attention layers. During training, we keep the diffusion backbone frozen, and only optimize the memory encoder. It yields a rather efficient training process on few training parameters (150M) and 10K data samples, and enables plug-and-play usage at inference time. Extensive experiments on state-of-the-art models demonstrate the effectiveness of our method in improving physical rule following and video fidelity.},
+  preview={DitMem_00.jpg},
+  description={A plug-and-play memory module for video diffusion models that enhances physical rule adherence and video fidelity through targeted guidance using low-/high-pass filters.},
+  keywords={Computer Vision, Video Generation, Diffusion Models, Memory Networks}
+}
+
+@inproceedings{song2025mma,
+  selected={true},
+  title={MMA: Benchmarking multi-modal large language model in ambiguity contexts},
+  author={Song, Selena* and Wang, Ru* and Ding, Liang and Gong, Mingming and Iwasawa, Yusuke and Matsuo, Yutaka and Guo, Jiaxian},
+  booktitle={ICLR 2025 Workshop on Navigating and Addressing Data Problems for Foundation Models},
+  year={2025},
+  website={https://physicsru.github.io/mma.github.io/},
+  abstract = {Multi-Modal Large Language Models (MLLMs) recently demonstrated strong capabilities in both instruction comprehension and responding, positioning them as promising tools for human-computer interaction. However, the inherent ambiguity of language poses a challenge, potentially leading models astray in task implementation due to differing interpretations of the same text within varying contexts. In multi-modal settings, visual information serves as a natural aid in disambiguating such scenarios. In this paper, we introduce the first benchmark specifically designed to evaluate the performance of \textbf{M}LL\textbf{M}s in \textbf{A}mbiguous contexts (MMA). This benchmark employs a multiple-choice visual question-answering format and includes 261 textual contexts and questions with ambiguous meaning. Each question is linked to a pair of images that suggest divergent scenarios, thus leading to different answers given the same question. These questions are stratified into three categories of ambiguity: lexical, syntactic, and semantic, to facilitate a detailed examination of MLLM performance across varying levels of ambiguity. By evaluating 24 proprietary and open-sourced MLLMs, we find that: (1) MLLMs often overlook scenario-specific information provided by images to clarify the ambiguity of texts. When presented with two different contextual images and asked the same question, MLLMs achieved an accuracy rate of only 53.22% in answering both correctly, compared to human performance at 88.97%.(2) Among the three types of ambiguity, models perform best under lexical ambiguity and worst under syntactic ambiguity. (3) Open-sourced models generally perform significantly lower than proprietary MLLMs, with an average performance gap of 12.59%, Claude 3.5 Sonnet, emerges as the top model, achieving 74.32% accuracy. These findings firstly underscore the current limitations of MLLMs in integrating visual information to clarify textual ambiguities and highlight critical areas for future improvements.},
+  preview={amb_exp_00.jpg},
+  description={A benchmark evaluating multi-modal large language models' ability to resolve ambiguities in text using visual context, revealing significant performance gaps.},
+  keywords={Multi-Modal Learning, Large Language Models, Ambiguity Resolution, Benchmarking}
+}
+
+@misc{wang2025indistributionsuccessscalingcurves,
+  selected={true},
+  title={Beyond In-Distribution Success: Scaling Curves of CoT Granularity for Language Model Generalization}, 
+  author={Ru Wang* and Wei Huang* and Selena Song and Haoyu Zhang and Yusuke Iwasawa and Yutaka Matsuo and Jiaxian Guo},
+   booktitle={CPAL 2025},
+  year={2025},
+  eprint={2502.18273},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  website={https://arxiv.org/abs/2502.18273}, 
+  abstract = {Generalization to novel compound tasks under distribution shift is important for deploying transformer-based language models (LMs). This work investigates Chain-of-Thought (CoT) reasoning as a means to enhance OOD generalization. Through controlled experiments across several compound tasks, we reveal three key insights: (1) While QA-trained models achieve near-perfect in-distribution accuracy, their OOD performance degrades catastrophically, even with 10000k+ training examples; (2) the granularity of CoT data strongly correlates with generalization performance; finer-grained CoT data leads to better generalization; (3) CoT exhibits remarkable sample efficiency, matching QA performance with much less (even 80%) data. Theoretically, we demonstrate that compound tasks inherently permit shortcuts in Q-A data that misalign with true reasoning principles, while CoT forces internalization of valid dependency structures, and thus can achieve better generalization. Further, we show that transformer positional embeddings can amplify generalization by emphasizing subtask condition recurrence in long CoT sequences. Our combined theoretical and empirical analysis provides compelling evidence for CoT reasoning as a crucial training paradigm for enabling LM generalization under real-world distributional shifts for compound tasks.},
+  preview={COT_00.jpg},
+  description={Investigates Chain-of-Thought reasoning to enhance out-of-distribution generalization in language models, revealing the importance of CoT granularity and sample efficiency.},
+  keywords={Language Models, Generalization, Chain-of-Thought, Distribution Shift}
+}

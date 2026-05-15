@@ -1,0 +1,45 @@
+[site]
+title = "Selena Song"
+description = "Ph.D. Student at UC Santa Cruz."
+favicon = "/favicon.svg"
+last_updated = "December 12, 2025"
+
+[author]
+name = "Selena Song"
+title = ""
+institution = ""
+avatar = "/bio.jpg"
+
+[social]
+# Contact information (leave blank or delete to hide)
+
+email = "selenasong@ucsc.edu"
+google_scholar = "https://scholar.google.com/citations?user=r9zwfxAAAAAJ&hl=en"
+orcid = "https://orcid.org/0009-0009-9433-1647"
+github = "https://github.com/Selena-Song"
+
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
